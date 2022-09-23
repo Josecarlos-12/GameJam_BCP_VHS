@@ -37,7 +37,7 @@ public class SeletionMarbin : MonoBehaviour
     public Text[] textAll;
     public Text family;
 
-    public GameObject fatherOne, fatherTwo, fatherThree, fatherFour, fatherFive;
+    public GameObject fatherOne, fatherTwo, fatherThree, fatherFour, fatherFive, fatherSix, fatherSeven;
     // Start is called before the first frame update
     void Start()
     {
@@ -150,23 +150,23 @@ public class SeletionMarbin : MonoBehaviour
 
             if (index == 0)
             {
-                
+                fatherSix.SetActive(true);
             }
             if (index == 1)
             {
-                
+                fatherThree.SetActive(true);
             }
             if (index == 2)
             {
-                
+                fatherFour.SetActive(true);
             }
             if (index == 3)
             {
-                
+                fatherSeven.SetActive(true);
             }
             if (index == 4)
             {
-               
+                fatherSeven.SetActive(true);
             }
         }
         canvas.SetActive(false);
