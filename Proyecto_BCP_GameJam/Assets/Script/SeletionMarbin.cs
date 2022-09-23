@@ -150,24 +150,23 @@ public class SeletionMarbin : MonoBehaviour
 
             if (index == 0)
             {
-                fatherFive.SetActive(true);
+                
             }
             if (index == 1)
             {
                 
-                fatherThree.SetActive(true);
             }
             if (index == 2)
             {
-                fatherFive.SetActive(true);
+                
             }
             if (index == 3)
             {
-                fatherTwo.SetActive(true);
+                
             }
             if (index == 4)
             {
-                fatherTwo.SetActive(true);
+               
             }
         }
         canvas.SetActive(false);
