@@ -42,6 +42,10 @@ public class SeletionMarbin : MonoBehaviour
 
     public ProbalityNumbers probality;
 
+    public GameObject buttons,slide;
+
+    public GameObject backGroun, backGround2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -89,6 +93,10 @@ public class SeletionMarbin : MonoBehaviour
 
     public void Play()
     {
+        backGroun.SetActive(false);
+        backGround2.SetActive(true);
+        buttons.SetActive(true);
+        slide.SetActive(true);
         probality.TextEstadistic();
         if (count == 1)
         {

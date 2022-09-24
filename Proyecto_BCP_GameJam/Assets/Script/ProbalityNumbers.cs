@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ProbalityNumbers : MonoBehaviour
 {
+    public GameObject healfGame, stressGame; 
     public Image barHealf, barStreest;
     public ProbalityNumbers probality;
 
@@ -13,7 +14,9 @@ public class ProbalityNumbers : MonoBehaviour
     public float maxStress;
 
     public float money;
+    [Range(0f, 100)]
     public float healf;
+    [Range(0f,100)]
     public float stress;
 
     public int indexMoney;
@@ -25,6 +28,8 @@ public class ProbalityNumbers : MonoBehaviour
     public string stressText;
 
     public Text text;
+    public Text HText;
+    public Text SText;
 
     public GameObject[] textGame;
     public int indexGame;
@@ -38,8 +43,14 @@ public class ProbalityNumbers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (healf <= maxHealf)
+        {
+
+        }
         barHealf.fillAmount = healf/maxHealf;
         barStreest.fillAmount=stress/maxStress;
+        HText.text = healf.ToString("0");
+        SText.text= stress.ToString("0");
     }
 
     public void TextEstadistic()
@@ -57,6 +68,8 @@ public class ProbalityNumbers : MonoBehaviour
         text.text=$"Dinero: {moneyText}." +
             $"Salud: {healfText}." + 
             $"Estres: {stressText}.";*/
+        healfGame.SetActive(true);
+        stressGame.SetActive(true) ;
         indexGame=Random.Range(0,textGame.Length);
         textGame[indexGame].gameObject.SetActive(true);
 
