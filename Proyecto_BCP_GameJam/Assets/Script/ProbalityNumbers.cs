@@ -5,9 +5,16 @@ using UnityEngine.UI;
 
 public class ProbalityNumbers : MonoBehaviour
 {
-    public int money;
-    public int healf;
-    public int stress;
+    public Image barHealf, barStreest;
+    public ProbalityNumbers probality;
+
+    public float maxMoney;
+    public float maxHealf;
+    public float maxStress;
+
+    public float money;
+    public float healf;
+    public float stress;
 
     public int indexMoney;
     public int indexHealf;
@@ -31,7 +38,8 @@ public class ProbalityNumbers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        barHealf.fillAmount = healf/maxHealf;
+        barStreest.fillAmount=stress/maxStress;
     }
 
     public void TextEstadistic()
