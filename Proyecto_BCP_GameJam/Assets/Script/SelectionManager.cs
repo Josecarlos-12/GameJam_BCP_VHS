@@ -11,7 +11,6 @@ public class SelectionManager : MonoBehaviour
     private int selectedGender = 0;
     public GameObject playergender;
 
-
     public void NextOption()
     {
         selectedGender = selectedGender + 1;
@@ -36,6 +35,7 @@ public class SelectionManager : MonoBehaviour
     {
         PrefabUtility.SaveAsPrefabAsset(playergender,"Assets/selectedskin.prefab");
         SceneManager.LoadScene("MainGame");
+        
     }
 
 }

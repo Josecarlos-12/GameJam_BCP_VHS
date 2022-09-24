@@ -38,6 +38,10 @@ public class SeletionMarbin : MonoBehaviour
     public Text family;
 
     public GameObject fatherOne, fatherTwo, fatherThree, fatherFour, fatherFive, fatherSix, fatherSeven;
+
+
+    public ProbalityNumbers probality;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +89,7 @@ public class SeletionMarbin : MonoBehaviour
 
     public void Play()
     {
+        probality.TextEstadistic();
         if (count == 1)
         {
             edad = Random.Range(18, 35);
@@ -124,7 +129,7 @@ public class SeletionMarbin : MonoBehaviour
             }
             if (index == 4)
             {
-                fatherFive.SetActive(true);
+                fatherSix.SetActive(true);
             }
 
         }
