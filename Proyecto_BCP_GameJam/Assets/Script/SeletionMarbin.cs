@@ -46,6 +46,8 @@ public class SeletionMarbin : MonoBehaviour
 
     public GameObject backGroun, backGround2;
 
+    public GameObject imageHombre, ImageMujer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -100,6 +102,8 @@ public class SeletionMarbin : MonoBehaviour
         probality.TextEstadistic();
         if (count == 1)
         {
+            imageHombre.SetActive(true);
+            ImageMujer.SetActive(false);
             edad = Random.Range(18, 35);
             index = Random.Range(0, namesMen.Length);
             nameH = namesMen[index];
@@ -143,6 +147,8 @@ public class SeletionMarbin : MonoBehaviour
         }
         else if (count == 2)
         {
+            imageHombre.SetActive(false);
+            ImageMujer.SetActive(true);
             edad = Random.Range(18, 35);
             index = Random.Range(0, namesWoman.Length);
             nameM=namesWoman[index];

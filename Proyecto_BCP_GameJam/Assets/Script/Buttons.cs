@@ -14,7 +14,9 @@ public class Buttons : MonoBehaviour
     public GameObject timeComplet;
     public GameObject time, mediunComplet, cachuelos, retu;
     public GameObject buttonMT, buttonCa;
+    public GameObject acti;
 
+    public GameObject cuy, returCuy;
     public void Prota()
     {
         character.SetActive(true);
@@ -87,7 +89,7 @@ public class Buttons : MonoBehaviour
         mediunComplet.SetActive(false);
         cachuelos.SetActive(false);
     }
-    
+
     public void CachueloReturn()
     {
         buttonCa.SetActive(false);
@@ -96,4 +98,25 @@ public class Buttons : MonoBehaviour
         mediunComplet.SetActive(true);
         cachuelos.SetActive(true);
     }
+
+    public void Activities()
+    {
+        acti.SetActive(true);
+    }
+
+    public void ReturActivities()
+    {
+        acti.SetActive(false);
+    }
+
+    public void Cuyo()
+    {
+        cuy.SetActive(true);
+    }
+
+    public void ReturnCuyo()
+    {
+        cuy.SetActive(false);
+    }
+
 }

@@ -215,27 +215,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recurso_11_4
-      rect:
-        serializedVersion: 2
-        x: 9810
-        y: 245
-        width: 2019
-        height: 2643
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 424e5c676ca190244ba116a140f97f50
-      internalID: 187225282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Recurso_11_5
       rect:
         serializedVersion: 2
@@ -256,6 +235,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Recurso_11_4
+      rect:
+        serializedVersion: 2
+        x: 9810
+        y: 245
+        width: 2019
+        height: 2643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb36cebfbfe35e47b6cf10c3a461f14
+      internalID: 187225282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 11829
+        height: 3128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d154996dafead841bd1e56e6fed64e8
+      internalID: -547394984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -270,6 +291,7 @@ TextureImporter:
       Recurso_11_4: 187225282
       Recurso_11_3: 268503118
       Recurso_11_5: -380544875
+      Recurso_11_6: -547394984
       Recurso_11_1: -727613916
       Recurso_11_2: 1808953488
       Recurso_11_0: -346757025
