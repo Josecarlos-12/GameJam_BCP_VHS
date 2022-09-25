@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: efdbe07687ddc24459ade9d8a706a1d9
+guid: f96174e9a27b131428ed2886e3b41d59
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,7 +129,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Recurso_11_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2019
+        height: 3128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b69716636d85a8469224620a0009d5d
+      internalID: -346757025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_1
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 251
+        width: 2025
+        height: 2877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443227690fca6be4798cb78d368107ad
+      internalID: -727613916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_2
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 240
+        width: 2021
+        height: 2879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6309bd271f47ed489962fd26164fb30
+      internalID: 1808953488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_3
+      rect:
+        serializedVersion: 2
+        x: 7344
+        y: 245
+        width: 2027
+        height: 2586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e2e717f90064348b319c22354d81b9
+      internalID: 268503118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_4
+      rect:
+        serializedVersion: 2
+        x: 9810
+        y: 245
+        width: 2019
+        height: 2643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424e5c676ca190244ba116a140f97f50
+      internalID: 187225282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recurso_11_5
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 0
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3d02ad72fa5424894c66db2ba64f29
+      internalID: -380544875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +266,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Recurso_11_4: 187225282
+      Recurso_11_3: 268503118
+      Recurso_11_5: -380544875
+      Recurso_11_1: -727613916
+      Recurso_11_2: 1808953488
+      Recurso_11_0: -346757025
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
