@@ -12,7 +12,7 @@ public class ProbalityNumbers : MonoBehaviour
     public float maxMoney;
     public float maxHealf;
     public float maxStress;
-
+    [Range(0f, 1000000)]
     public float money;
     [Range(0f, 100)]
     public float healf;
@@ -30,6 +30,7 @@ public class ProbalityNumbers : MonoBehaviour
     public Text text;
     public Text HText;
     public Text SText;
+    public Text DText;
 
     public GameObject[] textGame;
     public int indexGame;
@@ -51,6 +52,7 @@ public class ProbalityNumbers : MonoBehaviour
         barStreest.fillAmount=stress/maxStress;
         HText.text = healf.ToString("0");
         SText.text= stress.ToString("0");
+        DText.text = "S/." + money.ToString("0");
     }
 
     public void TextEstadistic()
