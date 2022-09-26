@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     public float timer;
     public float maxTimer;
     public int days;
+    public int sema;
     public string[] daysText;
     public string textAll;
 
@@ -19,6 +21,13 @@ public class Timer : MonoBehaviour
     public int countTues;
     public int counThurs;
     public int countSatur;
+    public ProbalityNumbers probality;
+    public int sabado;
+    public GameObject button, buttonSaba;
+    public SelectionJobs select;
+    public int cuota;
+    public Prestamo pres;
+    public Text textDays;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +37,13 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        textDays.text = $"Hoy es: {textAll}";
+        if (cuota == 14)
+        {
+            Debug.Log("Oe paga :v");
+            cuota = 0;
+        }
+
         if (!ultimate)
         {
             timer = timer + Time.deltaTime;
@@ -35,20 +51,34 @@ public class Timer : MonoBehaviour
         
         if (timer >= maxTimer)
         {
+            if (select.sema)
+            {
+                sema++;
+            }
+            if (pres.cuota)
+            {
+                cuota++;
+            }
             
             days++;
             Debug.Log($"Hoy es {textAll}");
             timer = 0;
+            probality.count = 0;
+            probality.countPop = 0;
         }
 
         if (days == 0)
         {
+            if (select.working)
+            {
+                buttonSaba.SetActive(false);
+                button.SetActive(true);
+            }            
             textAll = daysText[0];
         }
         if(days == 1)
         {
             textAll = daysText[1];
-            
         }
         if (days == 2)
         {
@@ -77,13 +107,18 @@ public class Timer : MonoBehaviour
         }
         if (days == 5)
         {
+            if (select.working)
+            {
+                buttonSaba.SetActive(true);
+                button.SetActive(false);
+            }            
             textAll = daysText[5];
            
         }
         if (days == 6)
         {
-            textAll = daysText[6];
             
+            textAll = daysText[6];
         }
         if (days >= 7)
         {

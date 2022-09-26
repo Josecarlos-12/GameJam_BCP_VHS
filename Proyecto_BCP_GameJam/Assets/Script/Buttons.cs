@@ -16,7 +16,8 @@ public class Buttons : MonoBehaviour
     public GameObject buttonMT, buttonCa;
     public GameObject acti;
 
-    public GameObject cuy, returCuy;
+    public GameObject cuy, returCuy, work;
+    public SelectionJobs selection;
     public void Prota()
     {
         character.SetActive(true);
@@ -50,7 +51,7 @@ public class Buttons : MonoBehaviour
         timeComplet.SetActive(true);
         time.SetActive(false);
         retu.SetActive(false);
-        mediunComplet.SetActive(false);
+        //mediunComplet.SetActive(false);
         cachuelos.SetActive(false);
     }
 
@@ -59,7 +60,6 @@ public class Buttons : MonoBehaviour
         timeComplet.SetActive(false);
         time.SetActive(true);
         retu.SetActive(true);
-        mediunComplet.SetActive(true);
         cachuelos.SetActive(true);
     }
 
@@ -68,7 +68,7 @@ public class Buttons : MonoBehaviour
         buttonMT.SetActive(true);
         time.SetActive(false);
         retu.SetActive(false);
-        mediunComplet.SetActive(false);
+        //mediunComplet.SetActive(false);
         cachuelos.SetActive(false);
     }
 
@@ -77,25 +77,27 @@ public class Buttons : MonoBehaviour
         buttonMT.SetActive(false);
         time.SetActive(true);
         retu.SetActive(true);
-        mediunComplet.SetActive(true);
+        //mediunComplet.SetActive(true);
         cachuelos.SetActive(true);
     }
 
     public void Cachuelo()
     {
+        work.SetActive(true);
         buttonCa.SetActive(true);
         time.SetActive(false);
         retu.SetActive(false);
-        mediunComplet.SetActive(false);
+        //mediunComplet.SetActive(false);
         cachuelos.SetActive(false);
     }
 
     public void CachueloReturn()
     {
+        work.SetActive(false);
         buttonCa.SetActive(false);
         time.SetActive(true);
         retu.SetActive(true);
-        mediunComplet.SetActive(true);
+        //mediunComplet.SetActive(true);
         cachuelos.SetActive(true);
     }
 

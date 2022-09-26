@@ -47,6 +47,8 @@ public class SeletionMarbin : MonoBehaviour
     public GameObject backGroun, backGround2;
 
     public GameObject imageHombre, ImageMujer;
+    public Timer timer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +97,7 @@ public class SeletionMarbin : MonoBehaviour
 
     public void Play()
     {
+        timer.enabled = true;
         backGroun.SetActive(false);
         backGround2.SetActive(true);
         buttons.SetActive(true);

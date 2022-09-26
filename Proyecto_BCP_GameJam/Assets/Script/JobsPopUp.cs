@@ -8,6 +8,9 @@ public class JobsPopUp : MonoBehaviour
     public GameObject cajer, diseGra, returMt;
     public GameObject paseDog, tutor, returCa;
 
+    public ProbalityNumbers probality;
+    public GameObject pasearPop, popfalse;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,5 +107,15 @@ public class JobsPopUp : MonoBehaviour
     {
         tutor.SetActive(false);
         returCa.SetActive(true);
+    }
+
+    public void Return()
+    {
+        pasearPop.SetActive(false);
+    }
+
+    public void FalseA()
+    {
+        popfalse.SetActive(false);
     }
 }

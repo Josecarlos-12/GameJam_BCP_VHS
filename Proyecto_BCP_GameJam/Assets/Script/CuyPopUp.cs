@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CuyPopUp : MonoBehaviour
 {
-    public GameObject prest, pagar, returCredi, salud, tajeta, auxilio, seguro;
+    public GameObject prest, pagar, returCredi, salud, tajeta, auxilio, seguro, returCue, cuenAhoPop;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,5 +87,17 @@ public class CuyPopUp : MonoBehaviour
     {
         seguro.SetActive(false);
         returCredi.SetActive(true);
+    }
+
+    public void CueAhorro()
+    {
+        cuenAhoPop.SetActive(true);
+        returCue.SetActive(false);
+    }
+
+    public void ReturnCueAhorro()
+    {
+        cuenAhoPop.SetActive(false);
+        returCue.SetActive(true);
     }
 }

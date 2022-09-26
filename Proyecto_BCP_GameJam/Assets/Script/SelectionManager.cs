@@ -33,7 +33,7 @@ public class SelectionManager : MonoBehaviour
 
     public void PlayGame()
     {
-        PrefabUtility.SaveAsPrefabAsset(playergender,"Assets/selectedskin.prefab");
+        //PrefabUtility.SaveAsPrefabAsset(playergender,"Assets/selectedskin.prefab");
         SceneManager.LoadScene("MainGame");
         
     }

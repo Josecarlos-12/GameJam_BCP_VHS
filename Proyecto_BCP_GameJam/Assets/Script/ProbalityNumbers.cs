@@ -14,6 +14,7 @@ public class ProbalityNumbers : MonoBehaviour
     public float maxStress;
     [Range(0f, 1000000)]
     public float money;
+    public SelectionJobs selections;
     [Range(0f, 100)]
     public float healf;
     [Range(0f,100)]
@@ -35,6 +36,14 @@ public class ProbalityNumbers : MonoBehaviour
     public GameObject[] textGame;
     public int indexGame;
 
+
+    public int count;
+    public int countPop;
+    public GameObject popUp;
+    public GameObject popUpFalse;
+    public bool active;
+    public TimerEvent timer;
+    public Timer sabado;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,5 +102,28 @@ public class ProbalityNumbers : MonoBehaviour
             healf = 79;
             stress = 6;
         }
+    }
+
+
+    public void WorkJob()
+    {
+        count++;
+        countPop ++;
+        if (count == 1) 
+        {
+            
+            active = true;
+            money += selections.money;
+            Debug.Log(selections.money);
+        }
+        if (countPop > 1)
+        {
+            popUp.SetActive(true);
+        }
+    }
+
+    public void JobFalse()
+    {
+        popUpFalse.SetActive(true);
     }
 }

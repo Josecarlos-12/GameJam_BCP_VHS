@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonCuy : MonoBehaviour
 {
     public GameObject retur, credito, cuentaAhorro, SeguroF, buttonCredit, buttonSeguro, buttonSalud;
+    public GameObject popUp;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,17 @@ public class ButtonCuy : MonoBehaviour
         credito.SetActive(false);
         cuentaAhorro.SetActive(false);
         SeguroF.SetActive(false);
+    }
+
+    public void ButtonSeguroFalse()
+    {
+        popUp.SetActive(true);
+        retur.SetActive(false);
+    }
+    public void ReturnSefuroFalse()
+    {
+        popUp.SetActive(false);
+        retur.SetActive(true);
     }
 
     public void ReturnSeguro()
